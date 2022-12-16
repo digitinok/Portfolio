@@ -7,6 +7,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: #061731;
 }
 
 h1,
@@ -20,4 +21,29 @@ h6 {
 
 p {
   margin: 0;
+}
+
+
+.hero-banner {
+  background-image: url("../images/02-hero-bg.jpg");
+  margin: 20px auto;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: aqua;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: end;
 }
