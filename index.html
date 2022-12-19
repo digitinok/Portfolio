@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>KB Web Developer Portfolio</title>
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
 
 <body>
@@ -15,9 +15,9 @@
     <h1>Konstanze Bartsch <span> -  Portfolio</span></h1>
     <nav>
       <a href="#about">About Me</a>
+      <a href="#work">Work</a>
       <a href="#contact">Contact Me</a>
       <a href="#">Resume</a>
-      <a href="#work">Work</a>
     </nav>
   </header>
 
@@ -33,40 +33,79 @@
     <!-- about me -->
     <section class="page-section" id="about">
       <h2>About Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Ut mauris massa, tempor non elit id, consectetur tempor nisl. 
-        Ut cursus quam et eros tincidunt feugiat. Nam aliquam lectus ac 
-        turpis tincidunt efficitur. Pellentesque quis semper quam. 
-        In mattis finibus libero. Fusce lectus ex, tincidunt sit amet nisi quis, 
-        consectetur suscipit neque. Phasellus feugiat, urna nec euismod imperdiet, 
-        magna nibh tincidunt dolor, quis posuere nulla magna vulputate eros. 
-        Morbi ut placerat sem. In ac elementum nunc. Etiam luctus lobortis dapibus. 
-        Etiam laoreet tristique eleifend.
-      </p>
-      <p>
-        Quisque tincidunt lacus ut massa dictum porttitor. 
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
-        posuere cubilia curae; Class aptent taciti sociosqu ad litora 
-        torquent per conubia nostra, per inceptos himenaeos. 
-        Pellentesque eget dictum risus. Nulla scelerisque, elit in finibus 
-        consequat, diam ipsum cursus lorem, vehicula convallis magna lectus 
-        eget dolor. Aenean urna sapien, dapibus nec maximus eu, euismod sit 
-        amet arcu. Pellentesque habitant morbi tristique senectus et netus et 
-        malesuada fames ac turpis egestas. Nunc lorem quam, mollis at justo in, 
-        cursus molestie dolor. Mauris consectetur nisl at posuere facilisis. 
-        Vivamus a erat augue.
-      S</p>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Ut mauris massa, tempor non elit id, consectetur tempor nisl. 
+          Ut cursus quam et eros tincidunt feugiat. Nam aliquam lectus ac 
+          turpis tincidunt efficitur. Pellentesque quis semper quam. 
+          In mattis finibus libero. Fusce lectus ex, tincidunt sit amet nisi quis, 
+          consectetur suscipit neque. Phasellus feugiat, urna nec euismod imperdiet, 
+          magna nibh tincidunt dolor, quis posuere nulla magna vulputate eros. 
+          Morbi ut placerat sem. In ac elementum nunc. Etiam luctus lobortis dapibus. 
+          Etiam laoreet tristique eleifend.
+        </p>
+        <p>
+          Quisque tincidunt lacus ut massa dictum porttitor. 
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
+          posuere cubilia curae; Class aptent taciti sociosqu ad litora 
+          torquent per conubia nostra, per inceptos himenaeos. 
+          Pellentesque eget dictum risus. Nulla scelerisque, elit in finibus 
+          consequat, diam ipsum cursus lorem, vehicula convallis magna lectus 
+          eget dolor. Aenean urna sapien, dapibus nec maximus eu, euismod sit 
+          amet arcu. Pellentesque habitant morbi tristique senectus et netus et 
+          malesuada fames ac turpis egestas. Nunc lorem quam, mollis at justo in, 
+          cursus molestie dolor. Mauris consectetur nisl at posuere facilisis. 
+          Vivamus a erat augue.
+        </p>
+      </div>
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
       <h2>Work</h2>
+      <div class="flex-container">
+        <a href="#" class="flex-item morse">
+          <div>
+            <h3>Text to Morse Code Translator</h3>
+            <span>Python</span>
+          </div>
+        </a>
+        <a href="#"  class="flex-item times">
+          <div>
+            <h3>Time Tablea Trainer Webpage</h3>
+            <span>HTML, JS</span>
+          </div>
+        </a>
+        <a href="#" class="flex-item home">
+          <div>
+            <h3>Home Hub</h3>
+            <span>Python, JS, HTML</span>
+          </div>
+        </a>
+        <a href="https://digitinok.github.io/prework-study-guide/" class="flex-item guide">
+          <div>
+            <h3>Study Guide</h3>
+            <span>HTML, CSS</span>
+          </div>
+        </a>
+        <a href="https://digitinok.github.io/code-refactor-for-html5/" class="flex-item refactor">
+          <div>
+            <h3>Code Refactoring</h3>
+            <span>HTML</span>
+          </div>
+        </a>
+      </div>
     </section>
 
     <!-- contact -->
     <section class="page-section contact" id="contact">
       <h2>Contact Me</h2>
+      <address>
+        <a href="tel:+441234567890">+441234567890</a>
+        <a href="mailto:a.sample@somewebsite.com">a.sample@somewebsite.com</a>
+        <a href="https://github.com/digitinok">Github</a>
+      </address>
     </section>
   </main>
 </body>

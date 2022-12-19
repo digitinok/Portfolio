@@ -7,6 +7,7 @@
   --secondary-color: blanchedalmond;
   --link-hover-color: lightsalmon;
   --header-color: #040d1b;
+  --distance: 20px;
 }
 
 body {
@@ -14,8 +15,6 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-
-
 }
 
 h1,
@@ -35,6 +34,7 @@ body {
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
+
 header {
   background-color: var(--header-color);
   padding: 20px;
@@ -52,39 +52,32 @@ header h1 span {
   display: none;
 }
 
-nav {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-nav a {
+a {
   color: var(--secondary-color);
   text-decoration: none;
   padding: 0 10px;
 }
 
-nav a:hover {
-  color: var(--link-hover-color);
-}
-
-
 .hero-banner {
-  background-image: url("../images/02-hero-bg.jpg");
-  background-position-y: 63%;
+  background-image: url("../images/02-hero-bg.jpg"), linear-gradient(180deg, var(--header-color), var(--primary-color));
+  background-position: center;
   background-repeat: no-repeat;
-  background-size:cover;
-  height: 100px;
- color: var(--link-hover-color);
+  background-size: cover;
+  background-blend-mode: soft-light;
+  min-height: 10vh;
 }
 
 .hero-banner div {
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-
 }
 
+.hero-banner h2 {
+  text-align: right ;
+  font-size: 2rem;
+}
 
 #avatar {
   vertical-align: middle;
@@ -94,6 +87,97 @@ nav a:hover {
   border: 2px solid var(--secondary-color);
 }
 
+.page-wrapper {
+  margin: 20px;
+}
+
+.page-section {
+  margin: var(--distance) 0;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.page-section > h2 {
+  flex: 0 0 20%;
+  border-right: 5px solid var(--secondary-color);
+  padding-right: 20px;
+  text-align: right;
+}
+
+.page-section > div {
+  flex: 0 0 77%;
+}
+
+.page-section p {
+  margin-bottom: var(--distance);
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-item {
+  border: 2px solid var(--secondary-color);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  margin: 0.5em;
+  background-blend-mode: soft-light;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
+
+.flex-item:first-child {
+  min-height: 300px;
+  flex-basis: 100%;
+}
+
+.flex-item div {
+  background-color: rgb(6, 23, 49, 0.4);
+  padding: 5px;
+}
+
+.flex-item:hover {
+  background-color: rgb(6, 23, 49, 0.4);
+
+}
+
+address {
+  font-style: normal;
+  text-align: left;
+  padding: var(--distance);
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+.morse {
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+
+.times {
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+
+.home {
+  background-image: url(../images/02-portfolio-3.jpg);
+}
+
+.guide {
+  background-image: url(../images/02-portfolio-4.jpg);
+}
+
+.refactor{
+  background-image: url(../images/02-run-buddy.jpg);
+}
 
 @media only screen and (min-width: 1400px)  {
   header h1 span {
@@ -102,14 +186,30 @@ nav a:hover {
 
 }
 
+/* adjusting to narrower screen */
 @media only screen and (max-width: 700px)  {
-  body {
-    background-color: red;
-  }
-
   header {
     flex-direction: column;
     align-items: center;
   }
 
+  .page-section > h2, .page-section > div {
+    flex: 0 0 95%;
+    margin: var(--distance) var(--distance) 0 var(--distance);
+    text-align: left;
+  }
+
+  .page-section > h2 {
+    border-right: none;
+    border-bottom: 5px solid var(--secondary-color);
+    padding-bottom: 5px;
+  }
+
+  .flex-item {
+    flex-basis: 100%;
+  }
+  
+  .flex-item:first-child {
+    min-height: 150px;
+  }
 }
